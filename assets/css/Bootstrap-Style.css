@@ -1,29 +1,22 @@
 body{
     background-image: url("../images/memphis-mini.png");
 }
+
 .bg-custom{
     background-color: #ffffff;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     border-bottom: 2px solid #cccccc;
 }
-.container{
-    display: flex;
-   flex-direction:row;
-}
 .navbar-brand{
-    color: #ffffff;
     background: #4aaaa5;
-    font-weight: bold;
 }
 
 .content-container{
     display: grid;
-
 }
 
-
 h1{
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
     color:#4aaaa5;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 
@@ -34,40 +27,70 @@ h1{
 }
 .content{
     background-color:#ffffff;
-    border: 2px solid #cccccc;
+    border: 1px solid #cccccc;
     padding:3%;
     justify-content: center;
 
 }
-.photo{
+.projects{
     display:grid;
     justify-content: center;
-
 }
-.projects{
+.photo{
+
+    justify-content: center;
     padding:30px;
     position:relative;
 }
+
 .banner{
     position: absolute;
     bottom: 50px;
     padding:15px;
     background-color: #4aaaa5;
     color: white;
-    width:270px;
+    width:300px;
     text-align: center;
     font-size: 18px;
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     display:grid;
     justify-content: center;
-
+}
+.contact{
+    display: grid;
+    justify-content: center;
+}
+label{
+    padding-top:5px;
+    color:#cccccc;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+}
+input[type=text], input[type=email], select, textarea{
+    width:960px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding:2px;
+}
+input[type=submit]{
+    background-color:#4aaaa5;
+    color:#ffffff;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:10px;
+    padding-right:10px;
 }
 
 
+ @media screen and (max-width: 960px) {
+    input[type=text], input[type=email], select, textarea {
+      width: 100%;
+      margin-top: 0;
+    }
+}
 
 @media screen and(max-width:728px){
 
-    @media screen and(max-width:480px) {}
+    @media screen and(max-width:480px) {
 }
 }
 
