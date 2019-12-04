@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -17,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-custom">
         <div class="container">
-            <a class="navbar-brand" href="Bootstrap-Index.html">Kaitlyn Carlson</a>
+            <a class="navbar-brand" href="Bootstrap-Index.html" style="color:#ffffff">Kaitlyn Carlson</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,9 +27,9 @@
             <div class="links">
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="Bootstrap-Index.html">About <span
+                        <a class="nav-item nav-link " href="Bootstrap-Index.html">About |<span
                                 class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="Bootstrap-Portfolio.html">Portfolio</a>
+                        <a class="nav-item nav-link" href="Bootstrap-Portfolio.html">Portfolio |</a>
                         <a class="nav-item nav-link" href="Bootstrap-Contact.html">Contact</a>
                     </div>
                 </div>
@@ -37,40 +38,54 @@
     </nav>
     </div>
 
-
     <div class="row wrapper">
         <div class="content col-12-lg" style="max-width:100%">
             <h1>Contact</h1><br>
-            <div class="row">
-                <form class="col-12-lg" action="action_page.php">
+            <div class="contact">
+                <div class="row">
+                    <form class="col-12-lg" action="action_page.php">
 
-                    <div class="row">
-                        <div class="contact col-lg-12">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your name..">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <label for="name">Name</label>
+                            </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <input type="text" id="name" name="name" placeholder="Your name..">
+                            </div>
+                        </div>
 
-                    <div class="row">
-                        <div class="contact col-lg-12">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your email..">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <label for="email">Email</label>
+                            </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <input type="email" id="email" name="email" placeholder="Your email..">
+                            </div>
+                        </div>
 
-                    <div class="row">
-                        <div class="contact col-lg-12">
-                            <label for="subject">Message</label>
-                            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <label for="subject">Message</label>
+                            </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="container">
+                                <textarea name="subject" placeholder="Write something.."></textarea>
+                            </div>
+                        </div>
 
-                    <div class="row">
-                        <div class="contact col-lg-12">
-                            <input type="submit" value="Submit">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <input type="submit" value="Submit">
+
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
