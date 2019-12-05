@@ -13,6 +13,8 @@ body{
 
 .content-container{
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
 }
 
 h1{
@@ -30,6 +32,8 @@ h1{
     border: 1px solid #cccccc;
     padding:3%;
     justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
 
 }
 .projects{
@@ -37,7 +41,6 @@ h1{
     justify-content: center;
 }
 .photo{
-
     justify-content: center;
     padding:30px;
     position:relative;
@@ -59,7 +62,10 @@ h1{
 .contact{
     display: grid;
     justify-content: center;
+    grid-template-columns: 1fr;
+    padding:2%;    
 }
+
 label{
     padding-top:5px;
     color:#cccccc;
@@ -67,9 +73,12 @@ label{
     font-size: 18px;
 }
 input[type=text], input[type=email], select, textarea{
-    width:960px;
+    width:100%;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     padding:2px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    
+
 }
 input[type=submit]{
     background-color:#4aaaa5;
@@ -79,9 +88,12 @@ input[type=submit]{
     padding-left:10px;
     padding-right:10px;
 }
+input{
+    grid-template-columns: 1fr;
+}
 
 
- @media screen and (max-width: 960px) {
+ @media screen and (width: 960px) {
     input[type=text], input[type=email], select, textarea {
       width: 100%;
       margin-top: 0;
@@ -90,8 +102,22 @@ input[type=submit]{
 
 @media screen and(max-width:728px){
 
+        .content-container input{
+            width: 100%;
+
+        }
+    }
     @media screen and(max-width:480px) {
+        .content-container input{
+            width: 100%;
+        }
 }
+}
+@media screen and(width:100px){
+
+    .content-container input {
+        width: 100%;
+    }
 }
 
 
