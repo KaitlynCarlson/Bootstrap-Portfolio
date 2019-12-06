@@ -6,6 +6,7 @@ body{
     background-color: #ffffff;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     border-bottom: 2px solid #cccccc;
+    
 }
 .navbar-brand{
     background: #4aaaa5;
@@ -27,6 +28,7 @@ h1{
 .row.wrapper{
     display:grid;
     margin: 2% 11.5% 10%;
+    justify-content: center;
 }
 .content{
     background-color:#ffffff;
@@ -34,7 +36,7 @@ h1{
     padding:3%;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    max-width: 960px;
+  width: 960px;
 }
 
 .content.co-lg-12{
@@ -139,7 +141,7 @@ body {
 
 @media screen and(width:200px){
 
-    .content-container input {
+  .row.wrapper{
         width: 100%;
         margin:0 !important;
     }
